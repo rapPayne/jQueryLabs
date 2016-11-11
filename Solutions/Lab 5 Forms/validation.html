@@ -6,9 +6,15 @@
   <title>Form Fun</title>
   <link href="../../Content/site.css" rel="stylesheet">
   <style>
-
+    label.error {
+      color: red;
+      display: block;
+      margin-left: 213px;
+    }
   </style>
-  <script src="/Scripts/jquery-1.6.3.min.js"></script>
+  <script src="../../Content/jquery.min.js" defer></script>
+  <script src="../../Content/jquery.validate.js" defer></script>
+  <script src="validation.js" defer></script>
 </head>
 
 <body>
@@ -21,10 +27,10 @@
     <div class="content">
       <div class="main">
         <h1>Signup</h1>
-        <form action="process.html" method="post" name="signup" id="signup">
+        <form name="signup" id="signup">
           <div>
             <label for="name" class="label">Name </label>
-            <input name="name" type="text" id="name" />
+            <input class="required" name="name" type="text" id="name" />
           </div>
           <div>
             <label for="email" class="label">E-mail Address</label>
@@ -49,7 +55,7 @@
           </div>
           <div>
             <label for="dob" class="label">Date of birth</label>
-            <input name="dob" type="text" id="dob" />
+            <input class="date" name="dob" type="text" id="dob" />
           </div>
           <div>
             <label for="planet" class="label">Planet of Birth</label>
