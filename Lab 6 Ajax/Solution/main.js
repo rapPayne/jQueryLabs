@@ -1,7 +1,7 @@
 $(function () {
-  $('#getMovie').click(function () {
-    var title = $('#movieTitle').val();
-    var url = "http://omdbapi.com/?t=" + title;
+  $('#getLocation').click(function () {
+    var ip = $('#ipAddress').val();
+    var url = "http://ip-api.com/json/" + ip;
     $.ajax({
       method: "GET",
       url: url
@@ -10,7 +10,7 @@ $(function () {
       for (var k in res)
         html += "<tr><td>" + k + "</td><td>" + res[k] + "</td></tr>";
       html += "</tbody></table>";
-      $('.movieData').html(html);
+      $('.outputDiv').html(html);
       console.log(res, html);
     }, function (error) {
       console.error("Error!", error);
