@@ -8,11 +8,11 @@
 
         $(this).hover(
           function() {
-            $(this).attr('src', preloadImage.src);
+            $(this).prop('src', preloadImage.src);
           },
           function() {
             var currentSource = $(this).attr('src');
-            $(this).attr('src', imgFile);
+            $(this).prop('src', imgFile);
           }); // end hover
       }); // end each
 
