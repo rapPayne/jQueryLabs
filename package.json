@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/rapPayne/jQueryLabs#readme",
   "dependencies": {
-    "jquery": "^3.1.1",
-    "jquery-validation": "^1.15.1"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "jquery-validation": "^1.16.0"
   }
 }
